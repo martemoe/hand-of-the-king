@@ -25,6 +25,7 @@ def minimax(board, player,card,banners):
 
     #Getting the valid moves the ai can take from the starting point to get a list of the actions to begin with
     actions = getvalidmoves(board)
+    random.shuffle(actions)
 
     #Set a variable for the current depth
     currentdepth = 0
